@@ -7,7 +7,7 @@
 #SBATCH --time=08:10:10
 #SBATCH --output=fin_model_%A.out
 
-
+export DATAROOT = "./nbody_dataset/"
 module purge
 module load 2022
 module load Anaconda3/2022.05
