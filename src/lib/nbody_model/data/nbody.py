@@ -94,7 +94,7 @@ class NBodyDataset:
 
 
 class NBody:
-    def __init__(self, data_root = os.environ["DATAROOT"], num_samples=3000, batch_size=100):
+    def __init__(self, data_root = "./nbody_dataset/", num_samples=3000, batch_size=100):
         self.train_dataset = NBodyDataset(
             partition="train", data_root=data_root, max_samples=num_samples, suffix='_charged5_initvel1small'
         )
